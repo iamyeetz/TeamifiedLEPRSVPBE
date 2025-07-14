@@ -21,10 +21,10 @@ namespace TeamifiedLEPRSVPBE.API
             {
                 options.AddPolicy("AllowFrontendDev", policy =>
                 {
-                    policy.WithOrigins("http://localhost:5174") // ⚠️ NO trailing slash
+                    policy.WithOrigins("http://localhost:5174")
                           .AllowAnyHeader()
                           .AllowAnyMethod()
-                          .AllowCredentials(); // Required for JWT in Authorization header
+                          .AllowCredentials(); 
                 });
             });
             // Register Auth

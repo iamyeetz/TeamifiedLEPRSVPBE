@@ -1,4 +1,6 @@
-Teamified Local Event Planner & RSVP Tracker Backend
+# TeamifiedLEPRSVPFE
+<p>Teamified Local Event Planner &amp; RSVP Tracker Backend</p>
+<p>TeamifiedLEPRSVPFE Link : https://github.com/iamyeetz/TeamifiedLEPRSVPFE.git</p>
 
 This Application is created in .Net Core using visual studio 2022 IDE , Followed a Clean architecture with repository pattern and used sqlite as database. Have simple Unit test to test the services.
 Runs on : https://localhost:7038/api

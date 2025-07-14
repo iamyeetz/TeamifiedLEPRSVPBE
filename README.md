@@ -4,6 +4,15 @@ This Application is created in .Net Core using visual studio 2022 IDE , Followed
 Runs on : https://localhost:7038/api
 
 
+<h3>Instructions</h3>
+1. Make sure that its running on  https://localhost:7038/api
+   launchSettings.json  : "applicationUrl": "https://localhost:7038;http://localhost:5000",
+2. Make sure Frontend runs on http://localhost:5174
+   Program.cs -- CORS Config :   policy.WithOrigins("http://localhost:5174")
+   Fronend  vite.config.js :     server: {port: 5174,}
+3. Backend Target Framework is .NET 8.0
+  
+
 <strong> Clean Architecture  : </strong> Divided the application into 4 main concepts API,Application,Core and Infrastructure
 <ul>
   <li><strong>API : </strong> Entry point of the application, Configured CORS policy middleware here in order for the frontend to access the endpoints.</li>
@@ -55,5 +64,10 @@ Runs on : https://localhost:7038/api
 </pre>
 
 
+
+<strong>Items to Improve/Implement</strong>
+1. Unit Test
+2. Implementation of Fluent Validation
+3. Authorization Using JWT Token to implement [Authorize] attribute
 
      

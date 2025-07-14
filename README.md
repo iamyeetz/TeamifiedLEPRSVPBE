@@ -3,7 +3,7 @@ Teamified Local Event Planner & RSVP Tracker Backend
 This Application is created in .Net Core using visual studio 2022 IDE , Followed a Clean architecture with repository pattern and used sqlite as database. Have simple Unit test to test the services.
 Runs on : https://localhost:7038/api
 
-
+<pre>
 <h3>Instructions</h3>
 1. Make sure that its running on  https://localhost:7038/api
    launchSettings.json  : "applicationUrl": "https://localhost:7038;http://localhost:5000",
@@ -11,7 +11,7 @@ Runs on : https://localhost:7038/api
    Program.cs -- CORS Config :   policy.WithOrigins("http://localhost:5174")
    Fronend  vite.config.js :     server: {port: 5174,}
 3. Backend Target Framework is .NET 8.0
-  
+  </pre>
 
 <strong> Clean Architecture  : </strong> Divided the application into 4 main concepts API,Application,Core and Infrastructure
 <ul>
